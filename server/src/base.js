@@ -1,8 +1,8 @@
 const Many = require( 'extends-classes' )
 const Utils = require( './utils' )
-const AccountsVerificationServices = require( './utils/accountsVerification' )
+const AccountsVerification = require( './utils/accountsVerification' )
 
-class Base extends Many( AccountsVerificationServices, Utils ) {
+class Base extends Many( AccountsVerification, Utils ) {
 
 }
 

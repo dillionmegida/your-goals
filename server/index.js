@@ -11,7 +11,7 @@ const typeDefs = require( './src/types' )
 const resolvers = require( './src/resolvers' )
 const dataSources = require( './src/datasources' )
 
-const { getUser } = require( './src/utils/auth' )
+const { getUser } = require( './src/utils/getUser' )
 
 new DB( superAdminDetails ).connect( MONGODB_URI_ONLINE || MONGODB_URI_OFFLINE )
 

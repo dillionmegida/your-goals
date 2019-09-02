@@ -27,6 +27,10 @@ const userSchema = new Schema( {
     trim: true
   },
   password: { type: String, minlength: 6 },
+  isActive: {
+    type: Boolean,
+    default: false
+  },
   isVerified: {
     type: Boolean,
     default: false

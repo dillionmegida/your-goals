@@ -2,6 +2,7 @@ const { GraphQLDate, GraphQLDateTime } = require( 'graphql-iso-date' )
 const { gql } = require( 'apollo-server' )
 
 const userDefs = require( './services/accounts/types/userDefs' )
+const goalDefs = require( './services/goals/types/goalDefs' )
 
 const linkSchema = gql`
   type Mutation {
@@ -22,5 +23,5 @@ const linkSchema = gql`
 
 module.exports = [
   linkSchema,
-  userDefs
+  userDefs, goalDefs
 ]

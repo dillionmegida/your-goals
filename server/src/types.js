@@ -16,7 +16,7 @@ const linkSchema = gql`
   type Subscription {
     _: Boolean
   }
-
+  
   scalar Date
   scalar DateTime
 `

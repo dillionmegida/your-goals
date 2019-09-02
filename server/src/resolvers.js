@@ -9,5 +9,11 @@ module.exports = {
 
   Mutation: {
     ...userMutations
+  },
+
+  MutationResponse: {
+    __resolveType( mutationResponse, context, info ) {
+      return null
+    }
   }
 }

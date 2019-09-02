@@ -15,7 +15,7 @@ const userDefs = gql`
   extend type Query {
     getAllGoals: [Goal]
     getGoal(id: ID): Goal
-    getCompletedGoals(): [Goal]
+    getCompletedGoals: [Goal]
   }
 
   extend type Mutation {
@@ -24,7 +24,7 @@ const userDefs = gql`
     deleteGoal(id: ID!): String!
   }
 
-  input createUser {
+  input createGoal {
     title: String!
     description: String
     type: String!

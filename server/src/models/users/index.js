@@ -34,6 +34,11 @@ const userSchema = new Schema( {
   emailVerificationToken: {
     type: String
   },
+  goals: [
+    {
+      type: Schema.Types.ObjectId
+    }
+  ]
 }, { timestamps: true } )
 
 const User = mongoose.model( 'User', userSchema )

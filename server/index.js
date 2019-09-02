@@ -13,7 +13,7 @@ const dataSources = require( './src/datasources' )
 
 const { getUser } = require( './src/utils/auth' )
 
-new DB( superAdminDetails ).connect( MONGODB_URI )
+new DB( superAdminDetails ).connect( MONGODB_URI_ONLINE || MONGODB_URI_OFFLINE )
 
 const server = new ApolloServer( {
   cors: true,

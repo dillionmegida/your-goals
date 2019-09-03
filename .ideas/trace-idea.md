@@ -37,4 +37,4 @@ User can also tag friends when creating new goals, share goals on social media.
 
 ## Twitter suggestions by [@kevinLtp59](https://www.twitter.com/kevinLtp59)
 
-> Really cool idea. I think it can be awesome to add a gamification part on the website (like you earn point, and at the end of the month, there is a rank you and all your friend, you can compare you "score"). Can't wait to see the project alive
+> Really cool idea. I think it can be awesome to add a gamification part on the website (like you earn point, and at the end of the month, there is a rank you and all your friend, you can compare you "score"). Can't wait to see the project alive - [see tweet](https://twitter.com/kevinLtp59/status/1168868308298403840?s=20)

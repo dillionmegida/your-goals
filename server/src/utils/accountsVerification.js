@@ -62,7 +62,7 @@ class AccountsVerification {
     } catch ( error ) {
       console.log( error )
     }
-  }Really cool idea. I think it can be awesome to add a gamification part on the website (like you earn point, and at the end of the month, there is a rank you and all your friend, you can compare you "score"). Can't wait to see the project alive
+  }
 }
 
 module.exports = AccountsVerification

@@ -1,0 +1,14 @@
+.TopNav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.TopNav ul {
+	display: flex;
+	justify-content: space-between;
+}
+.TopNav ul li {
+	display: block;
+	width: 100px;
+	margin:  0 2px;
+}

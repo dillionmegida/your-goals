@@ -32,3 +32,9 @@ User can also tag friends when creating new goals, share goals on social media.
   - a log of third-party influences on the user.
 - have daily quotes for all users.
 - have random background each day
+- gamification
+- earn points at the end of each month
+
+## Twitter suggestions by [@kevinLtp59](https://www.twitter.com/kevinLtp59)
+
+> Really cool idea. I think it can be awesome to add a gamification part on the website (like you earn point, and at the end of the month, there is a rank you and all your friend, you can compare you "score"). Can't wait to see the project alive

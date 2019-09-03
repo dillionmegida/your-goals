@@ -4,7 +4,7 @@ mongoose.set( 'useFindAndModify', false );
 
 const options = {
   keepAlive: true,
-  connectTimeoutMS: 30000,
+  connectTimeoutMS: 600000,
   useNewUrlParser: true,
   useCreateIndex: true
 };
@@ -21,7 +21,7 @@ class Database {
   connect( DB_URL ) {
     mongoose.connect( DB_URL, options )
       .then( () => {
-        console.log( `Successfully connected to ${DB_URL}` );
+        console.log( `Successfully connected to DB` );
       } )
       .catch( ( err ) => {
         console.log( `There was a database connection error ${err}` );
@@ -31,7 +31,7 @@ class Database {
     const db = mongoose.connection;
 
     db.once( 'disconnected', () => {
-      console.log( `Successfully disconnected from ${DB_URL}` );
+      console.log( `Successfully disconnected from DB` );
     } );
 
     process.on( 'SIGINT', () => {

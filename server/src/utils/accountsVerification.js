@@ -1,4 +1,4 @@
-const { NODE_ENV, MAILGUN_API_KEY, MAILGUN_DOMAIN } = process.env
+const { NODE_ENV, MAILGUN_API_KEY, MAILGUN_DOMAIN, SENDER_EMAIL } = process.env
 const dev = NODE_ENV || 'development'
 const mailgun = require( 'mailgun-js' )
 const mg = mailgun( { apiKey: MAILGUN_API_KEY, domain: MAILGUN_DOMAIN } )

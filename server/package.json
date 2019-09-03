@@ -1,0 +1,32 @@
+{
+  "name": "goal_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index"
+  },
+  "keywords": [
+    "server",
+    "goals",
+    "goals-settings",
+    "task-manager"
+  ],
+  "author": "Favour George <phavorsparks@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.8.1",
+    "bcryptjs": "2.4.3",
+    "extends-classes": "1.0.5",
+    "graphql": "^14.4.2",
+    "graphql-iso-date": "3.6.1",
+    "graphql-type-json": "^0.3.0",
+    "jsonwebtoken": "8.5.1",
+    "mailgun-js": "0.22.0",
+    "mongoose": "^5.6.8",
+    "nodemailer": "6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.19.1"
+  }
+}

@@ -1,7 +1,6 @@
-const { NODE_ENV, MAILGUN_API_KEY, MAILGUN_DOMAIN, SENDER_EMAIL } = process.env
+const { NODE_ENV, USER_NAME, USER_PASS } = process.env
 const dev = NODE_ENV || 'development'
-const mailgun = require( 'mailgun-js' )
-const mg = mailgun( { apiKey: MAILGUN_API_KEY, domain: MAILGUN_DOMAIN } )
+const nodemailer = require( 'nodemailer' )
 
 // Email Verification Service
 class AccountsVerification {
@@ -10,35 +9,59 @@ class AccountsVerification {
   }
 
   async mailTester( email, message, subject ) {
-    const data = {
-      from: `Trace Cool, Program Lead <${SENDER_EMAIL}>`,
-      to: email,
-      subject: subject,
-      html: message
-    };
-
-    mg.messages().send( data, function ( error, body ) {
-      if ( error ) {
-        console.log( error )
+    // create reusable transporter object using the default SMTP transport
+    let transporter = nodemailer.createTransport( {
+      host: "smtp.mailtrap.io",
+      port: 2525,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: USER_NAME,
+        pass: USER_PASS
       }
-      console.log( 'body', body );
-    } );
+    } )
+
+    try {
+      const options = {
+        from: `Trace 💩 <${USER_NAME}>`,
+        to: email,
+        subject: subject,
+        html: message
+      }
+
+      let info = await transporter.sendMail( options )
+
+      console.log( 'Message sent: %s', info.messageId );
+      // console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
+    } catch ( err ) {
+      console.log( err )
+    }
   }
 
   async mailer( email, message, subject ) {
-    const data = {
-      from: `George Favour, Program Lead <${SENDER_EMAIL}>`,
-      to: email,
-      subject: subject,
-      html: message
-    };
-
-    mg.messages().send( data, function ( error, body ) {
-      if ( error ) {
-        console.log( error )
+    let transporter = nodemailer.createTransport( {
+      host: "smtp.mailtrap.io",
+      port: 2525,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: USER_NAME,
+        pass: USER_PASS
       }
-      console.log( body );
-    } );
+    } )
+
+    try {
+      const options = {
+        from: `"Trace 🖤" <${USER_NAME}>`,
+        to: email,
+        subject: subject,
+        html: message
+      }
+      let info = await transporter.sendMail( options );
+
+      console.log( 'Message sent: %s', info.messageId );
+      // console.log( 'Preview URL: %s', nodemailer.getTestMessageUrl( info ) );
+    } catch ( error ) {
+      console.log( error )
+    }
   }
 }
 

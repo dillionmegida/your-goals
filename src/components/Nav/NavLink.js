@@ -1,9 +1,7 @@
 import React from 'react';
 
-require('./NavLink.css');
-
 let navLink = props => (
-	<li className='NavLink'>
+	<li style={{display: 'block'}} className={props.linkStyle}>
 		{props.nav}
 	</li>
 );

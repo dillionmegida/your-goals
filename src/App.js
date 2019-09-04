@@ -7,8 +7,16 @@ import Layout from './components/Layout/Layout';
 class App extends Component {
   render() {
     return (
-      <Layout>
-        <h1>Set Your Goals and Ace them : ) </h1>
+      <Layout mainStyle='HomeMain'>
+        <h1>Set Your Goals 'n <br/> Ace `em  &#128640; </h1>
+        <section className='Signin'>
+          <a href='#'>
+            SIGN IN
+          </a>
+          <a href='#'>
+            SIGN UP
+          </a>
+        </section>
       </Layout>
     );
   }

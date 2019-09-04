@@ -2,4 +2,9 @@
 	display: flex;
 	justify-content: space-around;
 	padding: 10px 30px;
+	background-color: var(--color4);
+	align-items: center;
+}
+.TopSection a {
+	color: white;
 }

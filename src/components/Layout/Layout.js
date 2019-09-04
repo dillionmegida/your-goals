@@ -2,9 +2,11 @@ import React from 'react';
 import TopSection from '../Containers/TopSection';
 
 let layout = props => (
-	<div>
+	<div class='screen'>
 		<TopSection />
-		{props.children}
+		<main className={props.mainStyle}>
+			{props.children}
+		</main>
 	</div>
 );
 

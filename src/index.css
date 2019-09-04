@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: rubik;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 300ms;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }

@@ -1,0 +1,14 @@
+.TestimonialSection {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	text-align: center;
+	background-color: var(--color1);
+	color: white;
+	flex-wrap: wrap;
+}
+.TestimonialSection h2 {
+	width: 100%;
+}

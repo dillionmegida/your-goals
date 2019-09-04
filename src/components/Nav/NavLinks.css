@@ -7,9 +7,15 @@
 	display: flex;
 	justify-content: space-between;
 }
-.TopNav ul li {
+.TopNav ul li a {
 	display: block;
-	width: 100px;
-	margin:  0 2px;
-	/* color: var(--color1); */
+	width: 120px;
+	margin:  0;
+	text-align: center;
+	padding: 5px 10px;
+	color: var(--color1);
+	border-bottom: 2px solid var(--color4);
+}
+.TopNav ul li a:hover {
+	border-bottom: 2px solid var(--color2);
 }

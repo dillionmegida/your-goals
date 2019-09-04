@@ -7,14 +7,10 @@ require('./NavLinks.css');
 let navLinks = () => (
 	<nav className='TopNav'>
 		<ul>
-			<NavLink nav='About Us'/>
+			<NavLink linkTo='#' nav='Testomonials'/>
+			<NavLink linkTo='#' nav='About Us'/>
+			<NavLink linkTo='#' nav='Contact Us'/>
 		</ul>
-		{/* <Button variant="outlined" color="primary">
-			Sign Up
-		</Button>
-		<Button variant="contained" color="primary">
-			Sign In
-		</Button> */}
 	</nav>
 );
 

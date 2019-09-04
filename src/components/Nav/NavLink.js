@@ -1,8 +1,10 @@
 import React from 'react';
 
 let navLink = props => (
-	<li style={{display: 'block'}} className={props.linkStyle}>
-		{props.nav}
+	<li>
+		<a href={props.linkTo}>
+			{props.nav}
+		</a>
 	</li>
 );
 

@@ -4,7 +4,9 @@
 	padding: 10px 30px;
 	background-color: var(--color4);
 	align-items: center;
-}
-.TopSection a {
-	color: white;
+	z-index: 2;
+	height: 100px;
+	position: sticky;
+	top: 0;
+	width: 100%;
 }

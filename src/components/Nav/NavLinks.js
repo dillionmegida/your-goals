@@ -7,7 +7,7 @@ require('./NavLinks.css');
 let navLinks = () => (
 	<nav className='TopNav'>
 		<ul>
-			<NavLink linkTo='#' nav='Testomonials'/>
+			<NavLink linkTo='#Testimonials' nav='Testomonials'/>
 			<NavLink linkTo='#' nav='About Us'/>
 			<NavLink linkTo='#' nav='Contact Us'/>
 		</ul>

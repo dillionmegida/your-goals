@@ -5,9 +5,9 @@ require('./Brand.css');
 
 export default () => (
 	<React.Fragment>
-		<span className='Brand'> 
+		<a href='#Intro' className='Brand'> 
 			<Logo />
 			<h3>YourGoals.com</h3>
-		</span>
+		</a>
 	</React.Fragment>
 )

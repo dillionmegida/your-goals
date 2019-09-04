@@ -11,9 +11,9 @@ let Testimonial = props => (
 	</div>
 );
 
-let TestimonialSection = () => {
+let TestimonialSection = props => {
 	return (
-		<section className='TestimonialSection'>
+		<section id={props.SectionId} className='TestimonialSection'>
 			<Testimonial Name='Dillion Megida' Testimony='Working with Trace on this mind blowing project. Beta version soon to be out. Stay tuned. Working with Trace on this mind blowing project. Beta version soon to be out. Stay tuned. Working with Trace on this mind blowing project. Beta version soon to be out. Stay tuned.'
 			/>
 

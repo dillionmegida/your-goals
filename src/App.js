@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <Layout mainStyle='HomeMain'>
-        <section className='Intro'>
+        <section id='Intro' className='Intro'>
           <h1>Set Your Goals 'n <br/> Ace `em  &#128640; </h1>
           <p>Goals keep you focused. They keep you on track. When they are set, they are give priority to what is primary, while other activities remain Secondary.<br/>
           Set your goals, and we'll help you achieve them &#128521;</p>
@@ -22,7 +22,7 @@ class App extends Component {
             </a>
           </section>
         </section>
-        <TestimonialSection />
+        <TestimonialSection SectionId='Testimonials' />
       </Layout>
     );
   }

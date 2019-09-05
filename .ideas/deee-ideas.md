@@ -5,3 +5,4 @@
 5. Once a user sets his status to public, some of his details would be showed in a general list.
 6. Homepage showing testimonials, and login.
 7. Web app would be pwa for now, later, it could be application.
+8. As time goes on, the user would be able to commit to a routine of posting his progress. e.g Weekly, he'll be posting what he was able to do in respect to achieving his goals.

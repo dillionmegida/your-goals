@@ -5,8 +5,9 @@ import NavLinks from '../Nav/NavLinks.js';
 require('./TopSection.css');
 
 export default () => (
-	<header className='TopSection'>
-		<Brand />
-		<NavLinks />
+	<header id='Intro' className='TopSection'>
+		<NavLinks>
+			<Brand />
+		</NavLinks>
 	</header>
 );

@@ -8,6 +8,7 @@
 }
 
 .Intro {
+  background-color: var(--color5);
   display: flex;
   flex-flow: column;
   justify-content: center;

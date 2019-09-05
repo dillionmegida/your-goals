@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,17 +10,17 @@ class App extends Component {
   render() {
     return (
       <Layout mainStyle='HomeMain'>
-        <section id='Intro' className='Intro'>
+        <section className='Intro'>
           <h1>Set Your Goals 'n <br/> Ace `em  &#128640; </h1>
           <p>Goals keep you focused. They keep you on track. When they are set, they are give priority to what is primary, while other activities remain Secondary.<br/>
           Set your goals, and we'll help you achieve them &#128521;</p>
           <section className='Signin'>
-            <a href='#'>
+            <Link to='#'>
               SIGN IN
-            </a>
-            <a href='#'>
+            </Link>
+            <Link to='register'>
               SIGN UP
-            </a>
+            </Link>
           </section>
         </section>
         <TestimonialSection SectionId='Testimonials' />

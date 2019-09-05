@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 
 import Layout from './components/Layout/Layout';
 import TestimonialSection from './components/Common/Testimonials';

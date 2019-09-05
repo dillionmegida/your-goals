@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 
 import Layout from './components/Layout/Layout';
@@ -11,9 +10,9 @@ class App extends Component {
     return (
       <Layout mainStyle='HomeMain'>
         <section className='Intro'>
-          <h1>Set Your Goals 'n <br/> Ace `em  &#128640; </h1>
-          <p>Goals keep you focused. They keep you on track. When they are set, they are give priority to what is primary, while other activities remain Secondary.<br/>
-          Set your goals, and we'll help you achieve them &#128521;</p>
+          <h1>Set Your Goals 'n <br /> Ace `em  &#128640; </h1>
+          <p>Goals keep you focused. They keep you on track. When they are set, they are give priority to what is primary, while other activities remain Secondary.<br />
+            Set your goals, and we'll help you achieve them &#128521;</p>
           <section className='Signin'>
             <Link to='#'>
               SIGN IN

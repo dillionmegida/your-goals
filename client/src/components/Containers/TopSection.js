@@ -4,9 +4,9 @@ import NavLinks from '../Nav/NavLinks.js';
 
 require('./TopSection.css');
 
-export default () => (
+export default (props) => (
 	<header id='Intro' className='TopSection'>
-		<NavLinks>
+		<NavLinks UserLoggedIn={props.UserLoggedIn}>
 			<Brand />
 		</NavLinks>
 	</header>

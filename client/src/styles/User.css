@@ -1,0 +1,58 @@
+.Dashboard {
+	min-width: 100vw;
+	min-height: calc(100vh - 100px);
+	background-color: var(--color4);
+	padding: 50px 10vw;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.CompAndIncomp {
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	height: 80%;
+}
+
+.AddGoal {
+	position: fixed;
+	top: 110px;
+	right: 25px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	background-color: var(--color6);
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+.AddGoal:hover {
+	animation: CreateAnim 0.5s alternate ease;
+}
+
+@keyframes CreateAnim {
+	25% {
+		transform: scale(1.2);
+	}
+	50% {
+		transform: scale(1.0);
+	}
+	75% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.Dashboard {
+		padding: 50px 0;
+	}
+}
+/* @media screen and (max-width: 500px) {
+	.CompAndIncomp {
+		width: 100vw;
+		margin-left: 0;
+	}
+} */

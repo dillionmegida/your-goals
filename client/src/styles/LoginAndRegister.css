@@ -1,0 +1,59 @@
+.AuthSection {
+	width: 100vw;
+	height: calc(100vh - 100px);
+	display: flex;
+	flex-direction: center;
+	background-color: var(--color4);
+}
+.Auth {
+	width: 500px;
+	margin: auto;
+	padding: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--color5);
+	box-shadow: 20px 20px 0 rgba(0, 0, 0, 0.05);
+}
+.Auth h2, .toAlternative {
+	margin: 5px 0 10px;
+	width: 100%;
+	padding: 10px;
+}
+.toAlternative {
+	display: block;
+	width: 100%;
+	border-bottom: 2px solid var(--color3);
+}
+.toAlternative:hover {
+	color: var(--color3);
+}
+.Auth input:not([type='submit']) {
+	width: 100%;
+	padding: 10px;
+	background-color: var(--color4);
+	border: 0;
+	border-bottom: 2px solid var(--color4);
+	margin: 10px 0;
+	border-radius: 5px;
+	font-size: 17px;
+
+}
+.Auth input:not([type='submit']):hover,
+.Auth input:not([type='submit']):focus {
+	border-bottom: 2px solid var(--color5);
+	background-color: var(--color5);
+}
+.RegisterBtn {
+	margin: 10px 0 0;
+	padding: 15px;
+	background-color: var(--color6);
+	border: 0;
+	text-align: center;
+	width: 100px;
+	cursor: pointer;
+}
+.RegisterBtn:hover {
+	opacity: .8;
+	border-radius: 10px;
+}

@@ -14,7 +14,7 @@ class App extends Component {
           <p>Goals keep you focused. They keep you on track. When they are set, they are give priority to what is primary, while other activities remain Secondary.<br />
             Set your goals, and we'll help you achieve them &#128521;</p>
           <section className='Signin'>
-            <Link to='#'>
+            <Link to='login'>
               SIGN IN
             </Link>
             <Link to='register'>

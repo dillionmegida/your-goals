@@ -9,16 +9,13 @@ let Register = () => {
     <Layout>
       <section className='AuthSection'>
         <section className='Auth'>
-          <h2>Register</h2><br />
-          <Link className='toAlternative' to='login'>
-            Or Login
+          <h2>Login</h2><br />
+          <Link className='toAlternative' to='Register'>
+            Or Register
           </Link>
-          <input type='text' placeholder='Full Name' />
           <input type='text' placeholder='Email Address' />
-          <input type='text' placeholder='Username' />
-          <input type='text' placeholder='*****' />
-          <input type='text' placeholder='*****' />
-          <input type='submit' className='RegisterBtn' value='Submit'/>
+          <input type='password' placeholder='Password' />
+          <input type='submit' className='RegisterBtn' value='Log In'/>
         </section>
       </section>
     </Layout>

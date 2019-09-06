@@ -9,7 +9,7 @@ let navLinks = props => (
 	<nav className='TopNav'>
 		<ul>
 			<div className='leftNavLinks'>
-				<NavLink linkTo='#Intro' nav='Introduction'/>
+				<NavLink linkTo='#' nav='Intro'/>
 				<NavLink linkTo='#Testimonials' nav='Testomonials'/>
 			</div>
 

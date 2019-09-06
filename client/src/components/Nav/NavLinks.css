@@ -20,6 +20,7 @@
 }
 .leftNavLinks, .rightNavLinks {
 	display: flex;
+	align-items: center;	
 }
 .TopNav ul {
 	display: flex;
@@ -39,6 +40,24 @@
 	border-bottom: 2px solid var(--color2);
 }
 
+.TopDp {
+	width: 120px;
+}
+.TopDp div{
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+}
+.TopDp img {
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+}
+
 @media screen and (max-width: 820px) {
 	.leftNavLinks, .rightNavLinks {
 		display: none;
@@ -47,5 +66,11 @@
 		display: block;
 		position: absolute;
 		right: 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.TopNav {
+		justify-content: flex-start;
 	}
 }

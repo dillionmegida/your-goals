@@ -1,0 +1,71 @@
+.GoalsSection {
+	width: 300px;
+	/* The height of a section is determined in the template */
+	background-color: white;
+	padding: 20px;
+	overflow-y: auto;
+	margin: 0 10px 20px;
+
+}
+.GoalsSection h3 {
+	color: var(--color2);
+	margin:  0;
+}
+
+.GoalsSection .Goal {
+	margin: 10px 0;
+	width: 100%;
+	height: 130px;
+	padding: 7px;
+	background-color: var(--color5);
+}
+
+.GoalsSection .Goal h4,
+.GoalsSection .Goal p {
+	margin: 10px 0;
+}
+
+.AllGoals {
+	height: 80%;
+}
+.CurrentGoals, .CompleteGoals {
+	height: 250px;
+}
+.GoalOptions {
+	display: flex;
+	float: right;
+}
+.GoalOptions button {
+	border: 0;
+	background-color: var(--color5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+.GoalOptions .edit {
+	color: var(--color6);
+}
+.GoalOptions .trash {
+	color: red;
+}
+
+@media screen and (max-width: 650px) {
+	.GoalsSection {
+		width: 230px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.GoalsSection {
+		width: 85vw;
+		display: flex;
+		flex-wrap: wrap;
+		/* margin: auto; */
+		/* margin: auto; */
+	}
+	.GoalsSection h3 {
+		/* width: 100%; */
+		flex-grow: 1;
+	}
+}

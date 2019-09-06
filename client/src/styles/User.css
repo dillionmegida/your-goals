@@ -1,5 +1,4 @@
 .Dashboard {
-	min-width: 100vw;
 	min-height: calc(100vh - 100px);
 	background-color: var(--color4);
 	padding: 50px 10vw;

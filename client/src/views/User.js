@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Layout from '../components/Layout/Layout';
 
 import AllGoals from '../components/Users/Goals/AllGoals';
+import CurrentGoals from '../components/Users/Goals/CurrentGoals';
 import CompletedGoals from '../components/Users/Goals/CompletedGoals';
 import IncompletedGoals from '../components/Users/Goals/IncompletedGoals.js';
 
@@ -16,11 +17,14 @@ let User = () => {
 					<i className='fa fa-plus fa-2x'></i>
 				</div>
 				
-				<AllGoals />
+				<CurrentGoals />
+
 				<section className='CompAndIncomp'>
-					<CompletedGoals />
 					<IncompletedGoals />
+					<CompletedGoals />
 				</section>
+				
+				<AllGoals />
 				
 
 

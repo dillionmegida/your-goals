@@ -2,27 +2,33 @@ import React from 'react';
 
 import './style.css';
 
+let Today = new Date();
+let FullDate = `${Today.getDay()} ${Today.getMonth()}, ${Today.getFullYear()}`;
+
 let Goals = [
 	{	
-		key: 'Play Games',
-		title: 'Play Games',
-		deadline: '15th Feb, 2019',
-		duration: '50 days',
-		status: 'Complete'
+		key: 'Buid Yourgoals.com',
+		title: 'Buid Yourgoals.com',
+		deadline: '0 September, 2019',
+		duration: '10 days',
+		status: 'Incomplete',
+		current: true
 	},
 	{	
 		key: 'Play Gamess',
-		title: 'Fly Plane',
+		title: 'Be World Class',
 		deadline: '15th Feb, 2019',
 		duration: '50 days',
-		status: 'Complete'
+		status: 'Incomplete',
+		current: true
 	},
 	{
 		key: 'Play Gamesaa',
-		title: 'Play School',
+		title: 'Start User page',
 		deadline: '15th Feb, 2019',
 		duration: '50 days',
-		status: 'Incomplete'
+		status: 'Complete',
+		current: false,
 	}
 ];
 
@@ -38,9 +44,12 @@ let TempCompletedGoals = Goals.filter(goal =>
 );
 
 let TempIncompletedGoals = Goals.filter(goal =>
-	goal.status == 'Incomplete'
+	goal.status === 'Incomplete'
 );
 
+let TempCurrentGoals = Goals.filter(goal =>
+	goal.current
+);
 
 let GoalsTemplate = props => {
 
@@ -62,6 +71,10 @@ let GoalsTemplate = props => {
 		case 'IncompletedGoals':
 		Category = TempIncompletedGoals;
 		break;
+
+		case 'CurrentGoals':
+		Category = TempCurrentGoals;
+		break;
 	}
 
 	{console.log(Category)}
@@ -70,11 +83,12 @@ let GoalsTemplate = props => {
 
 	return (
 		<section style={{height: props.DivHeight}} className={classes.join(' ')}>
-
+{console.log(FullDate)}
+		
 			<h3>{CategoryName}</h3>
 			{
 				Category.map(goal => 
-					<div className='Goal'>
+					<div className='Goal' key={goal.key}>
 						<div className='GoalOptions'>
 							{
 								goal.edit ? 

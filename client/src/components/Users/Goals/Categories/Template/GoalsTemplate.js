@@ -9,25 +9,28 @@ let Goals = [
 	{	
 		key: 'Buid Yourgoals.com',
 		title: 'Buid Yourgoals.com',
-		deadline: '0 September, 2019',
+		deadline: '02-06-2019',
 		duration: '10 days',
 		status: 'Incomplete',
+		routine: 'Weekly',
 		current: true
 	},
 	{	
 		key: 'Play Gamess',
 		title: 'Be World Class',
-		deadline: '15th Feb, 2019',
+		deadline: '02-09-2909',
 		duration: '50 days',
 		status: 'Incomplete',
+		routine: 'Yearly',
 		current: true
 	},
 	{
 		key: 'Play Gamesaa',
 		title: 'Start User page',
-		deadline: '15th Feb, 2019',
+		deadline: '02-09-2909',
 		duration: '50 days',
 		status: 'Complete',
+		routine: 'Monthly',
 		current: false,
 	}
 ];
@@ -101,9 +104,18 @@ let GoalsTemplate = props => {
 
 						</div>
 						<h4>{goal.title}</h4>
-						<p>{goal.deadline}</p>
-						<p>{goal.duration}</p>
-						<p>{goal.status}</p>
+						<p>Deadline: {goal.deadline}</p>
+						<p>Duration: {goal.duration}</p>
+						<p>Routine: {goal.routine}</p>
+						{goal.status === 'Complete' ?
+							<p className='GoalStatusIcons'><i style={{color: 'var(--color6)'}} className='fa fa-check-circle' ariaHidden='true'></i></p>
+							:
+							goal.status === 'Incomplete' ?
+								<p className='GoalStatusIcons'><i style={{color: 'gray'}} className='fa fa-exclamation-circle' ariaHidden='true'></i></p>
+								:
+								null
+						}
+						
 					</div>
 				)
 			}

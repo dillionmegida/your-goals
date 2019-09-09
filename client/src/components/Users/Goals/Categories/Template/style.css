@@ -15,14 +15,14 @@
 .GoalsSection .Goal {
 	margin: 10px 0;
 	width: 100%;
-	height: 130px;
+	height: 150px;
 	padding: 7px;
 	background-color: var(--color5);
 }
 
 .GoalsSection .Goal h4,
 .GoalsSection .Goal p {
-	margin: 10px 0;
+	margin: 7px 0;
 }
 
 .AllGoals {
@@ -48,6 +48,12 @@
 }
 .GoalOptions .trash {
 	color: red;
+}
+
+.GoalStatusIcons {
+	float: right;
+	font-size: 18px;
+	margin: 0;
 }
 
 @media screen and (max-width: 650px) {

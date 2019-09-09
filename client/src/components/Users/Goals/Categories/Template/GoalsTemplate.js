@@ -77,13 +77,8 @@ let GoalsTemplate = props => {
 		break;
 	}
 
-	{console.log(Category)}
-
-
-
 	return (
 		<section style={{height: props.DivHeight}} className={classes.join(' ')}>
-{console.log(FullDate)}
 		
 			<h3>{CategoryName}</h3>
 			{

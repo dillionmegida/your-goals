@@ -1,37 +1,68 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
 import Layout from '../components/Layout/Layout';
 
-import AllGoals from '../components/Users/Goals/AllGoals';
-import CurrentGoals from '../components/Users/Goals/CurrentGoals';
-import CompletedGoals from '../components/Users/Goals/CompletedGoals';
-import IncompletedGoals from '../components/Users/Goals/IncompletedGoals.js';
+// Categories of Goals
+import AllGoals from '../components/Users/Goals/Categories/AllGoals';
+import CurrentGoals from '../components/Users/Goals/Categories/CurrentGoals';
+import CompletedGoals from '../components/Users/Goals/Categories/CompletedGoals';
+import IncompletedGoals from '../components/Users/Goals/Categories/IncompletedGoals.js';
+
+//For Modal
+import Modal from '../components/Common/Modal/Modal';
 
 import '../styles/User.css';
 
-let User = () => {
-	return(
-		<Layout UserLoggedIn>
-			<main className='Dashboard'>
-				<div className='AddGoal'>
-					<i className='fa fa-plus fa-2x'></i>
-				</div>
+class User extends Component {
+
+	state={
+		ShowModal: false
+	}
+
+	closeModal = () => {
+		this.setState({
+			ShowModal: false
+		})
+	}
+
+	showModal = () => {
+		this.setState({
+			ShowModal: true
+		})
+	}
+
+
+	render() {
+		return(
+			<Layout UserLoggedIn>
+				{this.state.ShowModal ?
+					<Modal
+						CloseModal={this.closeModal}
+					/>
+					:
+					null
+				}
 				
-				<CurrentGoals />
+				<main className='Dashboard'>
+					<div onClick={this.showModal} className='AddGoal'>
+						<i className='fa fa-plus fa-2x'></i>
+					</div>
+					
+					<CurrentGoals />
 
-				<section className='CompAndIncomp'>
-					<IncompletedGoals />
-					<CompletedGoals />
-				</section>
-				
-				<AllGoals />
-				
+					<section className='CompAndIncomp'>
+						<IncompletedGoals />
+						<CompletedGoals />
+					</section>
+					
+					<AllGoals />
+					
 
 
 
-			</main>
-		</Layout>
-	)
+				</main>
+			</Layout>
+		)
+	}
 }
 
 export default User;

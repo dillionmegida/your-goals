@@ -1,0 +1,33 @@
+.ModalSection {
+    width: 80vw;
+    min-height: 80vh;
+    background-color: var(--color5);
+    position: fixed;
+    top: 50px;
+    left: 10vw;
+    right: 10vw;
+    z-index: 20;
+    /* transition: transform 1s; */
+    /* border: 2px solid var(--color6); */
+}
+/* .ModalClose {
+    transform: translateX(-100vw);
+}
+.ModalOpen {
+    transform: translateX(0);
+} */
+.BtnClose {
+    border: 0;
+    float: right;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: red;
+    background-color: var(--color5);
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+}
+.BtnClose:hover {
+    transform: scale(1.1);
+}

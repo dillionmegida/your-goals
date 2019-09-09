@@ -7,7 +7,7 @@ html {
 	width: 10px;
 }
 ::-webkit-scrollbar-track {
-	background-color: var(--color4);
+	background-color: var(--color5);
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.1) inset;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;

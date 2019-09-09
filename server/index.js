@@ -5,7 +5,8 @@ const fs = require( 'fs' )
 const path = require( 'path' )
 const https = require( 'https' )
 const DB = require( './src/database' )
-const superAdminDetails = require( './src/config/superAdmin.config' )
+// const superAdminDetails = require( './src/config/superAdmin.config' )
+// const superAdminDetails = require('./src/config/config.json');
 
 const typeDefs = require( './src/types' )
 const resolvers = require( './src/resolvers' )
@@ -13,7 +14,7 @@ const dataSources = require( './src/datasources' )
 
 const { getUser } = require( './src/utils/getUser' )
 
-new DB( superAdminDetails ).connect( MONGODB_URI_ONLINE )
+// new DB( superAdminDetails ).connect( MONGODB_URI_ONLINE )
 
 const server = new ApolloServer( {
   cors: true,

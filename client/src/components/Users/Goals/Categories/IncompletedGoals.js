@@ -1,5 +1,5 @@
 import React from 'react';
-import GoalsTemplate from './GoalsTemplate.js';
+import GoalsTemplate from './Template/GoalsTemplate.js';
 
 let IncompletedGoals = () => {
 	return(

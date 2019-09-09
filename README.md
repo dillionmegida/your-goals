@@ -2,6 +2,8 @@
 
 An application that helps you define your goals and frequently guides you (especially by notification emails or text message) of them until achieved.
 
+Check the `.ideas` folder to see our plans for this application. We welcome contributions also : )
+
 ## 🚀 How to start the server
 
 The server is built with [apollo-server](https://www.apollographql.com/docs/apollo-server/), it is easy to work with.

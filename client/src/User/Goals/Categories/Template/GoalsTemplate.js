@@ -32,7 +32,35 @@ let Goals = [
 		status: 'Complete',
 		routine: 'Monthly',
 		current: false,
+	},
+	{
+		key: 'Play Gamesaa',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Overdue',
+		routine: 'Monthly',
+		current: false,
+	},
+	{
+		key: 'Play Gamesaa',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Complete',
+		routine: 'Monthly',
+		current: false,
+	},
+	{
+		key: 'Play Gamesaa',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Overdue',
+		routine: 'Monthly',
+		current: false,
 	}
+	
 ];
 
 Goals.forEach(goal => {
@@ -124,4 +152,5 @@ let GoalsTemplate = props => {
 }
 
 export default GoalsTemplate;
+export { Goals };
 

@@ -1,13 +1,3 @@
-:root {
-  --color1: #443742;
-  --color2: #846C5B;
-  --color3: #CEA07E;
-  --color4: #EDD9A3;
-  --color5: #E2E8C0;
-  --color6: rgb(14, 221, 110);
-
-}
-
 .Intro {
   background-color: var(--color5);
   display: flex;
@@ -28,10 +18,7 @@
   max-width: 500px;
   line-height: 30px;
 }
-.Signin {
-  display: flex;
-}
-.Signin a {
+.GetStarted a {
   display: block;
   padding: 10px;
   margin: 5px;
@@ -39,7 +26,7 @@
   border-radius: 10px;
   color: var(--color1);
 }
-.Signin a:hover {
+.GetStarted a:hover {
   background-color: var(--color1);
   color: white;
 }

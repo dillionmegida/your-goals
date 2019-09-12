@@ -3,6 +3,20 @@ html {
 	scroll-behavior: smooth;
 }
 
+:root {
+  --color1: #443742;
+  --color2: #846C5B;
+  --color3: #CEA07E;
+  --color4: #EDD9A3;
+  --color5: #E2E8C0;
+  --color6: rgb(14, 221, 110);
+
+  --currentColor: #FF7F50;
+  --completeColor: var(--color6);
+  --overdueColor: red;
+
+}
+
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -20,7 +34,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: rubik;
+  font-family: rubik, 'Helvetica';
 }
 
 * {

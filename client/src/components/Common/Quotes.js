@@ -4,6 +4,10 @@ let Quote = [
 	{
 		quote: "What you get by achieving your goals is not as important as what you become by achieving your goals.",
 		author: "Henry David Thoreau"
+	},
+	{
+		quote: "Achieve your goals : )",
+		author: "Dillion Megida"
 	}
 ];
 

@@ -13,7 +13,7 @@
 	display: flex;
 	width: 60px;
 	align-items: center;
-	margin-right: 50px;
+	margin-right: 100px;
 	justify-content: space-between;
 	cursor: pointer;
 }
@@ -27,4 +27,27 @@
 }
 .Caret {
 	color: var(--color1);
+}
+.UserDropdown {
+	position: fixed;
+	width: 200px;
+	top: 70px;
+	right: 60px;
+	background-color: var(--color2);
+	text-align: center;
+}
+.UserDropdown ul {
+	padding: 0;
+	margin: 0;
+}
+.UserDropdown .fullname, .UserDropdown a {
+	display: block;
+	padding: 10px;
+	color: white;
+}
+.UserDropdown .fullname {
+	border-bottom: 2px solid var(--color1);
+}
+.UserDropdown a:hover{
+	background-color: var(--color1);
 }

@@ -1,9 +1,9 @@
 import React from 'react';
+import './RightColumn.css';
 
 let RightColumn = props => {
     return (
-        <section>
-            <h1>Hello</h1>
+        <section className='RightColumn'>
             {props.children}
         </section>
     )

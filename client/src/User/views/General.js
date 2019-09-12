@@ -1,14 +1,13 @@
 import React from 'react';
 
-import LeftColumn from '../components/container/LeftColumn/LeftColumn';
-import RightColumn from '../components/container/RightColumn/RightColumn';
+import UserLayout from '../components/Layout/UserLayout.js';
 
 let General = props => {
     return (
         <React.Fragment>
-            <LeftColumn>
-                
-            </LeftColumn>
+            <UserLayout>
+
+            </UserLayout>
         </React.Fragment>
     )
 };

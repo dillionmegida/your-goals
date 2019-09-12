@@ -10,9 +10,31 @@
 	font-size: 13px;
 	margin: 5px auto 0;
 }
+
+.Links ul li:nth-child(1) {
+	/* display: none; */
+	--bgcolor: #FFFF00;
+	--txtcolor: var(--color1);
+}
+.Links ul li:nth-child(2) {
+	--bgcolor: var(--currentColor);
+	--txtcolor: var(--color1);
+}
+.Links ul li:nth-child(3) {
+	--bgcolor: var(--color6);
+	--txtcolor: var(--color1);
+}
+/* .Links ul li:nth-child(4) {
+	--bgcolor: #FFE4C4;
+	--txtcolor: var(--color1);
+} */
+.Links ul li:nth-child(4) {
+	--bgcolor: var(--overdueColor);
+	--txtcolor: white;
+}
 .Links a:hover, .Links .active {
-	background-color: var(--color4);
-	color: var(--color1);
+	background-color: var(--bgcolor);
+	color: var(--txtcolor);
 }
 .Links {
 	width: 100%;

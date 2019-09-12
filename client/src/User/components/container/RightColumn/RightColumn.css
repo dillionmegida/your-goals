@@ -1,0 +1,7 @@
+.RightColumn {
+	width: calc(100% - 250px);
+	background-color: var(--color4);
+	min-height: 120vh;
+	margin-left: 250px;
+	padding: 10px 30px;
+}

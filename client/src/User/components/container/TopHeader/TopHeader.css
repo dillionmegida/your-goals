@@ -1,0 +1,30 @@
+.TopHeader {
+	height: 70px;
+	position: fixed;
+	top: 0;
+	background-color: var(--color4);
+	width: 100%;
+	box-shadow: 2px 2px 5px rgba(0,0,0,.1);
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+}
+.UserSection {
+	display: flex;
+	width: 60px;
+	align-items: center;
+	margin-right: 50px;
+	justify-content: space-between;
+	cursor: pointer;
+}
+.UserSection:hover {
+	transform: translateY(-2px);
+}
+
+.UserFullname {
+    font-size: 18px;
+    color: white;
+}
+.Caret {
+	color: var(--color1);
+}

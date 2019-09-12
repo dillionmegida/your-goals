@@ -1,3 +1,3 @@
-let name = 'Dillion Megida';
+let FirstName = 'Dillion';
 
-module.exports = { name };
+module.exports = { FirstName };

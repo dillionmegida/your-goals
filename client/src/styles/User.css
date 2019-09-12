@@ -1,5 +1,64 @@
-.Dahboard {
-	background-color: var(--color4);
+.WelcomeUser {
+	font-size: 30px;
+	margin: 10px 0;
+}
+.Statistics {
+	width: 100%;
+	background-color: white;
+	height: 200px;
+	display: flex;
+}
+.Statistics div {
+	width: 25%;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	text-align: center;
+	color: var(--color1);
+}
+.Statistics div:not(:last-child) {
+	border-right: 1px solid #ddd;
+}
+.Statistics .value {
+	font-size: 50px;
+	margin: 0;
+}
+
+.Overview {
+	margin: 40px 0;
+	width: 100%;
+	height: 500px;
+	background-color: white;
+}
+.Overview .title {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	padding-left: 5%;
+	background-color: var(--color3);
+	font-size: 20px;
+}
+.GoalsDisplay {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+	overflow-y: auto;
+}
+.GoalContainer {
+	width: 200px;
+	height: 200px;
+	border: 1px solid #ddd;
+	margin: 20px;
+}
+.GoalContainer p {
+	margin: 10px;
+}
+.GoalTitle {
+	font-weight: bold;
 }
 
 /* .Dashboard {

@@ -2,6 +2,36 @@
 	font-size: 30px;
 	margin: 10px 0;
 }
+.AddGoal {
+	position: fixed;
+	top: 110px;
+	right: 25px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	background-color: var(--color6);
+	color: white;
+	padding: 10px;
+	cursor: pointer;
+}
+.AddGoal:hover {
+	animation: CreateAnim 0.5s alternate ease;
+}
+@keyframes CreateAnim {
+	25% {
+		transform: scale(1.2);
+	}
+	50% {
+		transform: scale(1.0);
+	}
+	75% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
 .Statistics {
 	width: 100%;
 	background-color: white;
@@ -45,22 +75,25 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 20px;
+	padding: 10px;
 	overflow-y: auto;
 }
 .GoalContainer {
-	width: 200px;
-	height: 200px;
+	width: 230px;
+	height: 230px;
 	border: 1px solid #ddd;
-	margin: 20px;
-}
-.GoalContainer p {
-	margin: 10px;
+	margin: 10px 5px;
 }
 .GoalTitle {
 	font-weight: bold;
+	width: 100%;
+	padding: 10px;
+	margin: 0;
 }
-
+.GoalContents {
+	width:100%;
+	padding: 10px;
+}
 /* .Dashboard {
 	min-height: calc(100vh - 100px);
 	background-color: var(--color4);

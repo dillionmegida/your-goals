@@ -5,80 +5,24 @@ import './style.css';
 let Today = new Date();
 let FullDate = `${Today.getDay()} ${Today.getMonth()}, ${Today.getFullYear()}`;
 
-let Goals = [
-	{	
-		key: 'Buid Yourgoals.com',
-		title: 'Buid Yourgoals.com',
-		deadline: '02-06-2019',
-		duration: '10 days',
-		status: 'Incomplete',
-		routine: 'Weekly',
-		current: true
-	},
-	{	
-		key: 'Play Gamess',
-		title: 'Be World Class',
-		deadline: '02-09-2909',
-		duration: '50 days',
-		status: 'Incomplete',
-		routine: 'Yearly',
-		current: true
-	},
-	{
-		key: 'Play Gamesaa',
-		title: 'Start User page',
-		deadline: '02-09-2909',
-		duration: '50 days',
-		status: 'Complete',
-		routine: 'Monthly',
-		current: false,
-	},
-	{
-		key: 'Play Gamesaa',
-		title: 'Start User page',
-		deadline: '02-09-2909',
-		duration: '50 days',
-		status: 'Overdue',
-		routine: 'Monthly',
-		current: false,
-	},
-	{
-		key: 'Play Gamesaa',
-		title: 'Start User page',
-		deadline: '02-09-2909',
-		duration: '50 days',
-		status: 'Complete',
-		routine: 'Monthly',
-		current: false,
-	},
-	{
-		key: 'Play Gamesaa',
-		title: 'Start User page',
-		deadline: '02-09-2909',
-		duration: '50 days',
-		status: 'Overdue',
-		routine: 'Monthly',
-		current: false,
-	}
-	
-];
+import { AllGoals } from '../../Goals';
 
-Goals.forEach(goal => {
-	if(goal.status === 'Incomplete')
+AllGoals.forEach(goal => {
+	if(goal.status === 'Current')
 		goal.edit = true;
 });
 
-let TempAllGoals = Goals;
+let TempAllGoals = AllGoals;
 
-let TempCompletedGoals = Goals.filter(goal => 
+let TempCompletedGoals = AllGoals.filter(goal => 
 	goal.status == 'Complete'
 );
 
-let TempIncompletedGoals = Goals.filter(goal =>
-	goal.status === 'Incomplete'
+let TempIncompletedGoals = AllGoals.filter(goal =>
+	goal.status === 'Current'
 );
 
-let TempCurrentGoals = Goals.filter(goal =>
+let TempCurrentGoals = AllGoals.filter(goal =>
 	goal.current
 );
 
@@ -152,5 +96,4 @@ let GoalsTemplate = props => {
 }
 
 export default GoalsTemplate;
-export { Goals };
 

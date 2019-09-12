@@ -1,4 +1,8 @@
-.Dashboard {
+.Dahboard {
+	background-color: var(--color4);
+}
+
+/* .Dashboard {
 	min-height: calc(100vh - 100px);
 	background-color: var(--color4);
 	padding: 50px 10vw;
@@ -48,7 +52,7 @@
 	.Dashboard {
 		padding: 50px 0;
 	}
-}
+} */
 /* @media screen and (max-width: 500px) {
 	.CompAndIncomp {
 		width: 100vw;

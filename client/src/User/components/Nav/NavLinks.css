@@ -1,0 +1,28 @@
+.Links a {
+	color: white;
+	text-align: left;
+	background-color: var(--color1);
+	display: block;
+	width: 90%;
+	padding: 12px 15px;
+	/* border-bottom: 1px solid var(--color4); */
+	text-transform: uppercase;
+	font-size: 13px;
+	margin: 5px auto 0;
+}
+.Links a:hover, .Links .active {
+	background-color: var(--color4);
+	color: var(--color1);
+}
+.Links {
+	width: 100%;
+	/* background-color: blue; */
+	/* padding: 5px; */
+	text-align: center;
+}
+.Links ul {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}

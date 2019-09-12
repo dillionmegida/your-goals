@@ -28,10 +28,7 @@
   max-width: 500px;
   line-height: 30px;
 }
-.Signin {
-  display: flex;
-}
-.Signin a {
+.GetStarted a {
   display: block;
   padding: 10px;
   margin: 5px;
@@ -39,7 +36,7 @@
   border-radius: 10px;
   color: var(--color1);
 }
-.Signin a:hover {
+.GetStarted a:hover {
   background-color: var(--color1);
   color: white;
 }

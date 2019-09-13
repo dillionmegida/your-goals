@@ -57,10 +57,12 @@
 }
 
 .Overview {
-	margin: 40px 0;
+	margin: 40px 0 0;
 	width: 100%;
-	height: 500px;
+	/* height: 500px; */
 	background-color: white;
+	padding: 0 0 50px;
+	/* overflow-y: auto; */
 }
 .Overview .title {
 	display: flex;
@@ -74,80 +76,48 @@
 .GoalsDisplay {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	padding: 10px;
-	overflow-y: auto;
 }
 .GoalContainer {
 	width: 230px;
 	height: 230px;
 	border: 1px solid #ddd;
-	margin: 10px 5px;
+	margin: 10px 10px;
 }
 .GoalTitle {
 	font-weight: bold;
 	width: 100%;
 	padding: 10px;
 	margin: 0;
+	overflow-wrap: break-word;
 }
 .GoalContents {
 	width:100%;
 	padding: 10px;
 }
-/* .Dashboard {
-	min-height: calc(100vh - 100px);
-	background-color: var(--color4);
-	padding: 50px 10vw;
-	display: flex;
-	justify-content: space-evenly;
-	flex-wrap: wrap;
-}
 
-.CompAndIncomp {
-	display: flex;
-	flex-flow: column;
-	justify-content: space-between;
-	height: 80%;
-}
-
-.AddGoal {
-	position: fixed;
-	top: 110px;
-	right: 25px;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	background-color: var(--color6);
-	color: white;
-	padding: 10px;
-	cursor: pointer;
-}
-.AddGoal:hover {
-	animation: CreateAnim 0.5s alternate ease;
-}
-
-@keyframes CreateAnim {
-	25% {
-		transform: scale(1.2);
+@media screen and (max-width: 650px) {
+	.WelcomeUser {
+		font-size: 23px;
+		margin: 10px 10px;
 	}
-	50% {
-		transform: scale(1.0);
+	.AddGoal {
+		position: fixed;
+		top: 40px;
+		right: 5px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		background-color: var(--color6);
+		color: white;
+		padding: 10px;
+		cursor: pointer;
 	}
-	75% {
-		transform: scale(1.1);
+	.GoalsDisplay {
+		padding: 0;
 	}
-	100% {
-		transform: scale(1);
+	.GoalContainer {
+		width: 120px;
+		margin: 5px 5px;
 	}
 }
-
-@media screen and (max-width: 800px) {
-	.Dashboard {
-		padding: 50px 0;
-	}
-} */
-/* @media screen and (max-width: 500px) {
-	.CompAndIncomp {
-		width: 100vw;
-		margin-left: 0;
-	}
-} */

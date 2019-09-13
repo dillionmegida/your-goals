@@ -1,7 +1,14 @@
 .RightColumn {
-	width: calc(100% - 250px);
+	width: 84vw;
 	background-color: var(--color4);
 	min-height: 120vh;
-	margin-left: 250px;
+	margin-left: 16vw;
 	padding: 10px 30px;
+}
+@media screen and (max-width: 850px) {
+    .RightColumn {
+        width: calc(100vw - 60px);
+        margin-left: 60px;
+        padding: 10px 0;
+    }
 }

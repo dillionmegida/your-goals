@@ -13,7 +13,7 @@
 	display: flex;
 	width: 60px;
 	align-items: center;
-	margin-right: 100px;
+	margin-right: 10%;
 	justify-content: space-between;
 	cursor: pointer;
 }
@@ -32,7 +32,7 @@
 	position: fixed;
 	width: 200px;
 	top: 70px;
-	right: 60px;
+	right: 90px;
 	background-color: var(--color2);
 	text-align: center;
 }

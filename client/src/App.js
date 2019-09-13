@@ -11,11 +11,10 @@ class App extends Component {
       <Layout mainStyle='HomeMain'>
         <section className='Intro'>
           <h1>Set Your Goals 'n <br /> Ace `em  &#128640; </h1>
-          <p>Goals keep you focused. They keep you on track. When they are set, they are give priority to what is primary, while other activities remain Secondary.<br />
-            Set your goals, and we'll help you achieve them &#128521;</p>
+          <p>Goals keep you focused, oriented and highly productive...</p>
           <section className='GetStarted'>
             <Link to='register'>
-              GET STARTED
+              SET YOUR FIRST GOAL NOW
             </Link>
           </section>
         </section>

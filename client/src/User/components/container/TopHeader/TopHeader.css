@@ -8,16 +8,19 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 30px;
+	align-items: center;
 }
 .UserSection {
 	display: flex;
-	width: 60px;
+	width: 70px;
 	align-items: center;
 	margin-right: 10%;
-	justify-content: space-between;
+	/* justify-content: space-evenly; */
 	cursor: pointer;
+	border: 0;
+	background-color: transparent;
 }
-.UserSection:hover {
+.UserSection:hover, .UserSection:focus {
 	transform: translateY(-2px);
 }
 
@@ -48,6 +51,15 @@
 .UserDropdown .fullname {
 	border-bottom: 2px solid var(--color1);
 }
-.UserDropdown a:hover{
+.UserDropdown a:hover, .UserDropdown a:focus{
 	background-color: var(--color1);
+}
+
+@media screen and (max-width: 650px) {
+	.UserSection {
+		margin-right: 0;
+	}
+	.UserDropdown {
+		right: 30px;
+	}
 }

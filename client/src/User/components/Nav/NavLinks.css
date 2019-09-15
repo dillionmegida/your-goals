@@ -24,15 +24,15 @@
 	--bgcolor: var(--color6);
 	--txtcolor: var(--color1);
 }
-/* .Links ul li:nth-child(4) {
-	--bgcolor: #FFE4C4;
-	--txtcolor: var(--color1);
-} */
 .Links ul li:nth-child(4) {
 	--bgcolor: var(--overdueColor);
 	--txtcolor: white;
 }
-.Links a:hover, .Links .active {
+.Links ul li {
+	--bgcolor: var(--color4);
+	--txtcolor: var(--color1);
+}
+.Links a:hover, .Links .active, .Links a:focus {
 	background-color: var(--bgcolor);
 	color: var(--txtcolor);
 }

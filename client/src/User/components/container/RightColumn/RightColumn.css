@@ -7,8 +7,8 @@
 }
 @media screen and (max-width: 850px) {
     .RightColumn {
-        width: calc(100vw - 60px);
-        margin-left: 60px;
+        width: calc(100vw - 50px);
+        margin-left: 50px;
         padding: 10px 0;
     }
 }

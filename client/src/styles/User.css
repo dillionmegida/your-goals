@@ -1,6 +1,6 @@
 .WelcomeUser {
 	font-size: 30px;
-	margin: 10px 0;
+	margin: 10px 10px;
 }
 .AddGoal {
 	position: fixed;
@@ -51,6 +51,9 @@
 .Statistics div:not(:last-child) {
 	border-right: 1px solid #ddd;
 }
+.Statistics .tag {
+	margin: 0;
+}
 .Statistics .value {
 	font-size: 50px;
 	margin: 0;
@@ -100,7 +103,13 @@
 @media screen and (max-width: 650px) {
 	.WelcomeUser {
 		font-size: 23px;
-		margin: 10px 10px;
+	}
+	.Statistics {
+		height: 150px;
+		padding: 5px;
+	}
+	.Statistics .value {
+		font-size: 25px;
 	}
 	.AddGoal {
 		position: fixed;

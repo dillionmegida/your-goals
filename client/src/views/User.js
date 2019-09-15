@@ -81,7 +81,7 @@ class User extends Component {
             <p className='value'>10%</p>
           </div>
           <div>
-            <p className='tag'>Total Number of Goals</p>
+            <p className='tag'>Total Goals</p>
             <p className='value'>50</p>
           </div>
           <div>

@@ -11,7 +11,7 @@ html {
   --color5: #E2E8C0;
   --color6: rgb(14, 221, 110);
 
-  --currentColor: #FF7F50;
+  --currentColor: #148aff;
   --completeColor: var(--color6);
   --overdueColor: red;
 

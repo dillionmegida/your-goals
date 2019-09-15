@@ -24,10 +24,10 @@ class TopHeader extends React.Component {
     return (
       <header className='TopHeader'>
         <Logo color='var(--color1)' />
-        <section onClick={this.showDropDown} className='UserSection' title='Click for options'>
+        <button onClick={this.showDropDown} className='UserSection' title='Click for options' aria-haspopup="true">
           <Dp Circle DivHeight='40px' DivWidth='40px' />
           <i className='Caret fa fa-caret-down'></i>
-        </section>
+        </button>
         {this.state.UserDropdown ?
           <div className='UserDropdown'>
             <ul>

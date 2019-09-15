@@ -31,6 +31,38 @@ let AllGoals = [
 		duration: '50 days',
 		status: 'Overdue',
 		routine: 'Monthly'
+	},
+	{
+		key: 'Play ss',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Overdue',
+		routine: 'Monthly'
+	},
+	{
+		key: 'Play sss',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Overdue',
+		routine: 'Monthly'
+	},
+	{
+		key: 'Play ssss',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Overdue',
+		routine: 'Monthly'
+	},
+	{
+		key: 'Play saaa',
+		title: 'Start User page',
+		deadline: '02-09-2909',
+		duration: '50 days',
+		status: 'Overdue',
+		routine: 'Monthly'
 	}		
 ];
 

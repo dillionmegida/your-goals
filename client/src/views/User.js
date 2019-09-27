@@ -8,7 +8,7 @@ import '../styles/User.css';
 // import CurrentGoals from '../components/Users/Goals/Categories/CurrentGoals';
 // import CompletedGoals from '../components/Users/Goals/Categories/CompletedGoals';
 // import IncompletedGoals from '../components/Users/Goals/Categories/IncompletedGoals.js';
-import { AllGoals } from '../User/Goals/Goals';
+import { AllGoals, CurrentGoals, CompletedGoals, OverdueGoals } from '../User/Goals/Goals';
 
 //For Modal
 // import Modal from '../components/Common/Modal/Modal';
@@ -74,19 +74,21 @@ class User extends Component {
         <section className='Statistics'>
           <div>
             <p className='tag'>Success</p>
-            <p className='value'>80%</p>
-          </div>
-          <div>
-            <p className='tag'>Failure</p>
-            <p className='value'>10%</p>
+            <p className='value'>
+              {CompletedGoals.length === 0 ? '0%' : OverdueGoals.length === 0 ? '100%' : (CompletedGoals.length / OverdueGoals.length) * 100 + '%'}
+            </p>
           </div>
           <div>
             <p className='tag'>Total Goals</p>
-            <p className='value'>50</p>
+            <p className='value'>
+              {AllGoals.length}
+            </p>
           </div>
           <div>
             <p className='tag'>Current Goals</p>
-            <p className='value'>23</p>
+            <p className='value'>
+              {CurrentGoals.length}
+            </p>
           </div>
         </section>
         <section className='Overview'>
@@ -101,8 +103,8 @@ class User extends Component {
                   goal.status === 'Current' ? bgColor = 'currentColor' :
                     goal.status === 'Overdue' ? bgColor = 'overdueColor' : bgColor = null;
                 return (
-                  <div className='GoalContainer' key={goal.key}>
-                    <p style={{ backgroundColor: `var(--${bgColor})` }} className='GoalTitle'>{goal.title}</p>
+                  <div style={{border: `1px solid var(--${bgColor})`}} className='GoalContainer' key={goal.key}>
+                    <p style={{borderBottom: `1px solid var(--${bgColor})`}} className='GoalTitle'>{goal.title}</p>
                     <section className='GoalContents'>
                       <p>Deadline: {goal.deadline}</p>
                       <p>Status: <span style={{ color: `var(--${bgColor})` }}>{goal.status.toUpperCase()}</span></p>

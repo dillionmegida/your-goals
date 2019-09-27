@@ -20,13 +20,15 @@
 }
 .GetStarted a {
   display: block;
-  padding: 10px;
+  padding: 15px;
   margin: 5px;
   border: 2px solid var(--color1);
   border-radius: 10px;
   color: var(--color1);
+  cursor: pointer;
+  font-size: 17px;
 }
-.GetStarted a:hover {
+.GetStarted a:hover, .GetStarted a:focus {
   background-color: var(--color1);
   color: white;
 }

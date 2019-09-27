@@ -13,7 +13,7 @@
 
 .Links ul li:nth-child(1) {
 	/* display: none; */
-	--bgcolor: #FFFF00;
+	--bgcolor: yellow;
 	--txtcolor: var(--color1);
 }
 .Links ul li:nth-child(2) {

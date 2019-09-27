@@ -1,6 +1,7 @@
 .RightColumn {
 	width: 84vw;
-	background-color: var(--color4);
+	/* background-color: var(--color4); */
+	background-color:  white;
 	min-height: 120vh;
 	margin-left: 16vw;
 	padding: 10px 30px;

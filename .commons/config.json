@@ -1,0 +1,16 @@
+{
+  "test": {
+    "PORT": 4004,
+    "MONGODB_URI_OFFLINE": "mongodb://localhost:27017/goals",
+    "SSL_PORT": 4141,
+    "USER_NAME": "contact@goals.com",
+    "USER_PASS": "goals_admin"
+  },
+  "development": {
+    "PORT": 4004,
+    "MONGODB_URI_OFFLINE": "mongodb://localhost:27017/goals",
+    "SSL_PORT": 4141,
+    "USER_NAME": "contact@goals.com",
+    "USER_PASS": "goals_admin"
+  }
+}

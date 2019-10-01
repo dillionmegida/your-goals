@@ -1,0 +1,19 @@
+import { GET_CURRENT_USER, GET_TOKEN_LOCAL } from '../queries/clientQueries.gql'
+
+export const defaults = {
+  currentUser: {
+    __typename: 'CurrentUserType',
+    id: '',
+    createdAt: '',
+    updatedAt: '',
+    firstName: '',
+    lastName: '',
+    username: '',
+    email: '',
+    isVerified: ''
+  },
+  auth: {
+    __typename: 'AuthenticationType',
+    token: ''
+  }
+}

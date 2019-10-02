@@ -86,7 +86,7 @@
 }
 .GoalContainer {
 	width: 230px;
-	height: 230px;
+	height: 200px;
 	/* The border color is handled with the state */
 	border-radius: 10px;
 	margin: 10px 10px;
@@ -95,21 +95,61 @@
 .GoalContainer:hover, .GoalContainer:active {
 	box-shadow: 0 0 0 #eee;
 }
+.GoalContents {
+	width:100%;
+	padding: 10px;
+}
+.actions {
+	width: 100%;
+	text-align: right;
+}
+.actions button {
+	margin: 0 0 0 7px;
+	cursor: pointer;
+	border: 0;
+	background: none;
+	font-size: 20px;
+}
+.actions .edit {
+	color: green;
+}
+.actions .delete {
+	color: red;
+}
+.actions button:hover, .actions button:focus {
+	transform: scale(1.3);
+}
 .GoalTitle {
 	font-weight: bold;
 	width: 100%;
 	padding: 10px;
 	margin: 0;
 	overflow-wrap: break-word;
+	text-align: center;
 }
-.GoalContents {
-	width:100%;
-	padding: 10px;
+.GoalContainer .details {
+	width: 100%;
+	font-weight: bold;
+}
+.GoalContainer .details p{
+	margin: 10px 0;
+}
+.GoalContainer .label {
+	color: var(--color3);
+	font-weight: normal;
+}
+
+@media screen and (max-width: 850px) {
+	/* Left and right border is removed so as not to interfere with 100% of mainright */
+	.Statistics {
+		border-left-width: 0;
+		border-right-width: 0;
+	}
 }
 
 @media screen and (max-width: 650px) {
 	.WelcomeUser {
-		font-size: 23px;
+		font-size: 20px;
 	}
 	.Statistics {
 		height: 150px;
@@ -133,7 +173,23 @@
 		padding: 0;
 	}
 	.GoalContainer {
-		width: 120px;
-		margin: 5px 5px;
+		width: 40%;
+		margin: 10px 5px;
+		box-shadow: 5px 5px 0 #eee;
+		height: 200px;
+		font-size: 14px;
+	}
+	.GoalContents {
+		padding:  5px;
+	}
+}
+
+@media screen and (max-width: 430px) {
+	.GoalContainer {
+		width: 250px;
+		min-height: 170px;
+	}
+	.GoalContents {
+		padding: 10px 20px 5px;
 	}
 }

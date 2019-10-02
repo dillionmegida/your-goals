@@ -116,6 +116,9 @@
 .actions .delete {
 	color: red;
 }
+.actions button:hover, .actions button:focus {
+	transform: scale(1.3);
+}
 .GoalTitle {
 	font-weight: bold;
 	width: 100%;
@@ -146,7 +149,7 @@
 
 @media screen and (max-width: 650px) {
 	.WelcomeUser {
-		font-size: 23px;
+		font-size: 20px;
 	}
 	.Statistics {
 		height: 150px;

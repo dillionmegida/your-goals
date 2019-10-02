@@ -14,7 +14,7 @@ class TopHeader extends React.Component {
     UserDropdown: false
   }
 
-  showDropDown = () => {
+  toggleDropDown = () => {
     this.setState( prevState => ( {
       UserDropdown: !prevState.UserDropdown
     } ) )
@@ -36,7 +36,7 @@ class TopHeader extends React.Component {
     return (
       <header className='TopHeader'>
         <Logo color='var(--color1)' />
-        <button onClick={this.showDropDown} onFocus={this.showDropDown} onBlur={this.hideDropDown} className='UserSection' title='Click for options' aria-haspopup="true">
+        <button onClick={this.toggleDropDown} className='UserSection' title='Click for options' aria-haspopup="true">
           <Dp Circle DivHeight='40px' DivWidth='40px' />
           <i className='Caret fa fa-caret-down'></i>
         </button>

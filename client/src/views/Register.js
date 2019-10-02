@@ -36,8 +36,8 @@ let Register = () => {
         <section className='Auth'>
           <section>
             <h2>Register</h2><br />
-            <Link className='toAlternative' to='login'>
-              Or Login
+            <Link className='toAlternative' to='user'>
+              Or User
             </Link>
             <form onSubmit={handleSubmit}>
               <input

@@ -34,7 +34,7 @@
 }
 .UserDropdown {
 	position: fixed;
-	width: 200px;
+	width: 150px;
 	top: 70px;
 	right: 90px;
 	background-color: var(--color2);
@@ -62,5 +62,11 @@
 	}
 	.UserDropdown {
 		right: 30px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.TopHeader {
+		padding: 0 10px;
 	}
 }

@@ -48,3 +48,10 @@
 	margin: 0;
 	padding: 0;
 }
+
+@media only screen and (max-width: 850px) {
+	.Links a{
+		width: 100%;
+		padding: 12px 15px;
+	}
+}

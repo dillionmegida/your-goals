@@ -16,11 +16,19 @@ const initialState = {
 let Register = () => {
   const [state, setState] = useState(initialState)
 
+  const handleChange = ({ target: { value, name } }) => {
+    setState(prevState => ({
+      ...prevState, [name]: value
+    }))
+  }
+
   const handleSubmit = e => {
     e.preventDefault()
 
 
   }
+
+  console.log('state', state)
 
   return (
     <Layout>
@@ -32,11 +40,41 @@ let Register = () => {
               Or User
             </Link>
             <form onSubmit={handleSubmit}>
-              <input type='text' name="name" value={state.name} placeholder='Full Name' />
-              <input type='text' name="email" value={state.email} placeholder='Email Address' />
-              <input type='text' name="username" value={state.username} placeholder='Username' />
-              <input type='password' name="password" value={state.password} placeholder='Password' />
-              <input type='password' name="confirmPassword" value={state.confirmPassword} placeholder='Confirm Password' />
+              <input
+                type='text'
+                name="name"
+                value={state.name}
+                placeholder='Full Name'
+                onChange={handleChange}
+              />
+              <input
+                type='text'
+                name="email"
+                value={state.email}
+                placeholder='Email Address'
+                onChange={handleChange}
+              />
+              <input
+                type='text'
+                name="username"
+                value={state.username}
+                placeholder='Username'
+                onChange={handleChange}
+              />
+              <input
+                type='password'
+                name="password"
+                value={state.password}
+                placeholder='Password'
+                onChange={handleChange}
+              />
+              <input
+                type='password'
+                name="confirmPassword"
+                value={state.confirmPassword}
+                placeholder='Confirm Password'
+                onChange={handleChange}
+              />
               <input type='submit' className='RegisterBtn' value='Submit' />
             </form>
           </section>

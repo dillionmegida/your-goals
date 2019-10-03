@@ -1,37 +1,37 @@
-const bcrypt = require( 'bcryptjs' )
-const jwt = require( 'jsonwebtoken' )
+const bcrypt = require('bcryptjs')
 const { SECRET_KEY, BASE_URL, SALT_ROUND } = process.env
+const jwt = require('jsonwebtoken')
 
 class Utils {
 
-  async createToken( payload ) {
-    return await jwt.sign( payload, SECRET_KEY, { expiresIn: "24h" } )
+  async createToken(payload) {
+    return await jwt.sign(payload, SECRET_KEY, { expiresIn: "24h" })
   }
 
-  async getCurrentUser( payload ) {
-    return await jwt.verify( payload, SECRET_KEY )
+  async getCurrentUser(payload) {
+    return await jwt.verify(payload, SECRET_KEY)
   }
 
-  async hashPassword( password ) {
-    return await bcrypt.hash( password, Number( SALT_ROUND ) )
+  async hashPassword(password) {
+    return await bcrypt.hash(password, Number(SALT_ROUND))
   }
 
-  async comparePassword( password, savedPassword ) {
-    return await bcrypt.compare( password, savedPassword )
+  async comparePassword(password, savedPassword) {
+    return await bcrypt.compare(password, savedPassword)
   }
 
-  async getEmailVerifierToken( payload ) {
-    return await jwt.sign( { payload }, SECRET_KEY, { expiresIn: '1h' } )
+  async getEmailVerifierToken(payload) {
+    return await jwt.sign({ payload }, SECRET_KEY, { expiresIn: '1h' })
   }
 
-  async verifyEmailToken( token ) {
-    const isValid = await jwt.verify( token, SECRET_KEY )
+  async verifyEmailToken(token) {
+    const isValid = await jwt.verify(token, SECRET_KEY)
 
     return isValid ? true : false
   }
 
-  async getEVTTemplate( title, EVT, resend = false ) {
-    if ( resend === 'resend' ) {
+  async getEVTTemplate(title, EVT, resend = false) {
+    if (resend === 'resend') {
       return await `
     <body style="display: flex; justify-content: flex-start; padding-top: 1.5rem; align-items: center; flex-direction: column; font-family: helvetica, 'sans-serif'; color: #5a5a5a;">
       <h2 style="color: #505050;">${title}</h2>

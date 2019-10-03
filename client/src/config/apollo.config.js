@@ -11,7 +11,7 @@ const SCHEMA_VERSION_KEY = 'apollo-schema-version'
 
 const mode = process.env.NODE_ENV
 const uri = mode === 'production' ?
-  'ourprodction server' :
+  'https://keenserver.herokuapp.com' :
   'http://localhost:4000/graphql'
 
 class Persistor extends Component {

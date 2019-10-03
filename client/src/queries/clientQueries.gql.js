@@ -24,7 +24,7 @@ export const GET_CURRENT_USER = gql`
   }
 `
 
-# Mutations
+// Mutations
 export const STORE_TOKEN = gql`
   mutation storeToken($token: String!) {
     storeToken(token: $token) @client
@@ -54,4 +54,4 @@ export const STORE_CURRENT_USER = gql`
       isVerified: $isVerified
       oneId: $oneId
     ) @client
-  }
+}`

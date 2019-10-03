@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useMutation } from '@apollo/react-hooks'
 import Layout from '../components/Layout/Layout';
 import Quotes from '../components/Common/Quotes';
+import { ADD_NEW_USER } from '../queries/serverQueries.gql'
+
+import { validator } from '../utils/validate'
 
 import '../styles/LoginAndRegister.css';
 
@@ -15,6 +19,8 @@ const initialState = {
 
 let Register = () => {
   const [state, setState] = useState(initialState)
+  const [loading, setLoading] = useState(false)
+  const [registerUser] = useMutation(ADD_NEW_USER)
 
   const handleChange = ({ target: { value, name } }) => {
     setState(prevState => ({
@@ -22,13 +28,21 @@ let Register = () => {
     }))
   }
 
-  const handleSubmit = e => {
+  const handleSubmit = async e => {
     e.preventDefault()
 
+    const valid = validator(state)
 
+    if (!valid) alert('invalid form inputs')
+
+    delete state.confirmPassword
+
+    const { data, error, loading } = await registerUser({
+      variables: { ...state }
+    })
+
+    setLoading(loading)
   }
-
-  console.log('state', state)
 
   return (
     <Layout>
@@ -48,7 +62,7 @@ let Register = () => {
                 onChange={handleChange}
               />
               <input
-                type='text'
+                type='email'
                 name="email"
                 value={state.email}
                 placeholder='Email Address'
@@ -75,7 +89,7 @@ let Register = () => {
                 placeholder='Confirm Password'
                 onChange={handleChange}
               />
-              <input type='submit' className='RegisterBtn' value='Submit' />
+              <button type='submit' className='RegisterBtn' value='Submit' disabled={loading} />
             </form>
           </section>
         </section>

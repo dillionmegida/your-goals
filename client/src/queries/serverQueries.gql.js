@@ -44,19 +44,19 @@ export const RESEND_EMAIL_VERIFICATION = gql`
   }
 `
 
-# // Queries
-# export const GET_CURRENT_USER = gql`
-#   query ($token: String!) {
-#     getCurrentUser(token: $token) {
-#       id
-#       createdAt
-#       updatedAt
-#       firstName
-#       lastName
-#       username
-#       email
-#       isVerified
-#       oneId
-#     }
-#   }
-# `
+// Queries
+export const GET_CURRENT_USER = gql`
+  query ($token: String!) {
+    getCurrentUser(token: $token) {
+      id
+      createdAt
+      updatedAt
+      firstName
+      lastName
+      username
+      email
+      isVerified
+      oneId
+    }
+  }
+`
